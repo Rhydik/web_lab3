@@ -17,6 +17,7 @@ namespace web_lab3.Models
 
     public class Room
     {
+        [Key]
         public int Id { get; set; }
         [Required]
         public string title { get; set; }
@@ -27,12 +28,11 @@ namespace web_lab3.Models
         [Required]
         public double cubeSide { get; set; }
         public double latitude { get; set; }
-
-
     }
 
     public class Wall
     {
+        [Key]
         public int Id { get; set; }
         [Required]
         public string imageURL { get; set; }
