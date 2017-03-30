@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using web_lab3.Models;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +26,24 @@ namespace web_lab3
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var item = ((sender as ListView).SelectedItem as DTO);
+            //this.Frame.Navigate(typeof(VisitRoom), item.thisRoom.Id);
+        }
+
+        // Create a Room button click, Navigates to CreateRoom.xaml
+        private void createButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(CreateRoom), null);
+        }
+
+        // Select a Room button click, Makes listView visable.
+        private void selectRoomButton_Click(object sender, RoutedEventArgs e)
+        {
+            listView.Visibility = Visibility.Visible;
         }
     }
 }

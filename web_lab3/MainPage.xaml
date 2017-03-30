@@ -7,7 +7,25 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="#FF444444">
+        <Image Source="Assets/the-room-poster.jpg" Margin="0,0,0,300" Opacity="0.8" Width="360" Height="300"/>
+        <Button x:Name="createButton" Content="Create a new Room" Height="44" Width="150" Margin="0,20,0,0" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" Click="createButton_Click" BorderBrush="#66000000" >
+        </Button>
+        <Button x:Name="selectRoomButton" Content="Select a Room" Height="44" Width="150" Margin="0,150,0,0" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" Click="selectRoomButton_Click" BorderBrush="#66000000" >
+        </Button>
+        <ListView x:Name="listView" Grid.Column="1" HorizontalAlignment="Center" Height="100" Margin="61,332,60,0" VerticalAlignment="Top" Width="100" SelectionChanged="listView_SelectionChanged" Visibility="Collapsed">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid x:Name="listGrid" Height="33" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding thisRoom.title}" Grid.Column="0"  Width="95" Height="33" TextWrapping="Wrap" ></TextBlock>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>

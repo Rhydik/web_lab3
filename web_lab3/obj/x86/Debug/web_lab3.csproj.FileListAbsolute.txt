@@ -253,3 +253,8 @@ C:\Users\Jacob\Documents\Visual Studio 2015\Projects\web_lab3\web_lab3\obj\x86\D
 C:\Users\Jacob\Documents\Visual Studio 2015\Projects\web_lab3\web_lab3\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Jacob\Documents\Visual Studio 2015\Projects\web_lab3\web_lab3\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Jacob\Documents\Visual Studio 2015\Projects\web_lab3\web_lab3\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Jacob\Documents\Visual Studio 2015\Projects\web_lab3\web_lab3\obj\x86\Debug\CreateRoom.g.i.cs
+C:\Users\Jacob\Documents\Visual Studio 2015\Projects\web_lab3\web_lab3\obj\x86\Debug\CreateRoom.g.cs
+C:\Users\Jacob\Documents\Visual Studio 2015\Projects\web_lab3\web_lab3\obj\x86\Debug\CreateRoom.xaml
+C:\Users\Jacob\Documents\Visual Studio 2015\Projects\web_lab3\web_lab3\obj\x86\Debug\CreateRoom.xbf
+C:\Users\Jacob\Documents\Visual Studio 2015\Projects\web_lab3\web_lab3\bin\x86\Debug\CreateRoom.xbf

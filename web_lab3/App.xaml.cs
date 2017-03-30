@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using web_lab3.Models;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -30,6 +31,10 @@ namespace web_lab3
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            using (var db = new DatabaseContext())
+            {
+                db.Database.EnsureCreated();
+            }
         }
 
         /// <summary>
